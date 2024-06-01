@@ -2,10 +2,456 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Made in Lismore! </title>
+    <meta name="viewport" content="width=1368, initial-scale=1.0">
+    <title>Made in Lismore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .navbar .search-bar select {
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6767;
+            color: #fff;
+            cursor: pointer;
+        }
+        .navbar .icons img {
+            height: 24px;
+            margin-left: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #fff;
+            border-right: 1px solid #f0f0f0;
+        }
+        .sidebar .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar .category-list li {
+            padding: 10px 0;
+            color: #ff6767;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+            flex: 1;
+        }
+        .main-content .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .main-content .banner img {
+            width: 70%;
+            border-radius: 10px;
+        }
+        .main-content .banner .login {
+            text-align: center;
+        }
+        .main-content .banner .login button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6767;
+            color: #fff;
+            cursor: pointer;
+        }
+        .deals-offers, .home-decor, .make-it, .quote, .recommended, .more-info, .newsletter {
+            margin-bottom: 20px;
+        }
+        .deals-offers .title, .home-decor .title, .make-it .title, .quote .title, .recommended .title, .more-info .title, .newsletter .title {
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .deals-offers .products, .home-decor .products, .make-it .products, .recommended .products, .more-info .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .deals-offers .products .product, .home-decor .products .product, .make-it .products .product, .recommended .products .product, .more-info .products .product {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .deals-offers .products .product img, .home-decor .products .product img, .make-it .products .product img, .recommended .products .product img, .more-info .products .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .make-it .products .product {
+            flex: 1 1 24%;
+        }
+        .quote {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffdddd;
+            border-radius: 10px;
+        }
+        .quote .form {
+            flex: 1;
+            padding: 20px;
+        }
+        .quote .form input, .quote .form textarea, .quote .form select, .quote .form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #f0f0f0;
+        }
+        .quote .form button {
+            background-color: #ff6767;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+        .newsletter {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .newsletter input {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6767;
+            color: #fff;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer .column {
+            flex: 1;
+            padding: 10px;
+        }
+        footer .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer .column ul li {
+            padding: 5px 0;
+        }
+        footer .column img {
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Made in Lismore Logo">
+            <span>Made in Lismore</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <select>
+                <option value="all">All category</option>
+                <option value="cards">Cards</option>
+                <option value="pottery">Pottery</option>
+                <option value="paintings">Paintings</option>
+                <!-- Add other categories here -->
+            </select>
+            <button>Search</button>
+        </div>
+        <div class="icons">
+            <img src="profile-icon.png" alt="Profile Icon">
+            <img src="message-icon.png" alt="Message Icon">
+            <img src="orders-icon.png" alt="Orders Icon">
+            <img src="cart-icon.png" alt="Cart Icon">
+        </div>
+    </div>
+
+    <div style="display: flex;">
+        <div class="sidebar">
+            <ul class="category-list">
+                <li>Handicraft Bestsellers</li>
+                <li>Pottery</li>
+                <li>Home interiors</li>
+                <li>Cards</li>
+                <li>Painting</li>
+                <li>Crafts</li>
+                <li>Order It</li>
+                <li>Make It</li>
+                <li>More category</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="banner">
+                <img src="handicraft-banner.jpg" alt="Latest trending Handicraft items">
+                <div class="login">
+                    <p>Hi, user let's get started</p>
+                    <button>Join now</button>
+                    <button>Log in</button>
+                </div>
+            </div>
+            <div class="deals-offers">
+                <div class="title">Deals and offers</div>
+                <div class="countdown">
+                    <div>04 Days</div>
+                    <div>13 Hours</div>
+                    <div>34 Min</div>
+                    <div>56 Sec</div>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <img src="pottery.jpg" alt="Pottery">
+                        <p>Pottery</p>
+                        <p>-25%</p>
+                    </div>
+                    <div class="product">
+                        <img src="cards.jpg" alt="Cards">
+                        <p>Cards</p>
+                        <p>-15%</p>
+                    </div>
+                    <div class="product">
+                        <img src="paintings.jpg" alt="Paintings">
+                        <p>Paintings</p>
+                        <p>-40%</p>
+                    </div>
+                    <div class="product">
+                        <img src="weaved-baskets.jpg" alt="Weaved Baskets">
+                        <p>Weaved Baskets</p>
+                        <p>-25%</p>
+                    </div>
+                    <div class="product">
+                        <img src="canon-cameras.jpg" alt="Canon Cameras">
+                        <p>Canon Cameras</p>
+                        <p>-25%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-decor">
+                <div class="title">Home Decor</div>
+                <div class="products">
+                    <div class="product">
+                        <img src="paintings-home-decor.jpg" alt="Paintings">
+                        <p>Paintings</p>
+                    </div>
+                    <div class="product">
+                        <img src="weave-baskets.jpg" alt="Weave Baskets">
+                        <p>Weave Baskets</p>
+                    </div>
+                    <div class="product">
+                        <img src="hanging-art.jpg" alt="Hanging Art">
+                        <p>Hanging Art</p>
+                    </div>
+                    <div class="product">
+                        <img src="clay-cups.jpg" alt="Clay Cups">
+                        <p>Clay Cups</p>
+                    </div>
+                </div>
+            </div>
+            <div class="make-it">
+                <div class="title">Make It</div>
+                <div class="products">
+                    <div class="product">
+                        <img src="workshops.jpg" alt="Workshops">
+                        <p>Workshops</p>
+                    </div>
+                    <div class="product">
+                        <img src="craft-ideas.jpg" alt="Craft Ideas">
+                        <p>Craft Ideas</p>
+                    </div>
+                    <div class="product">
+                        <img src="craft-supplies.jpg" alt="Craft Supplies">
+                        <p>Craft Supplies</p>
+                    </div>
+                    <div class="product">
+                        <img src="more-workshops.jpg" alt="More Workshops">
+                        <p>More Workshops</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quote">
+                <div class="form">
+                    <h3>An easy way to send requests to all Artists</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <input type="text" placeholder="What item you need?">
+                    <textarea placeholder="Type more details"></textarea>
+                    <select>
+                        <option value="pcs">Pcs</option>
+                        <option value="sets">Sets</option>
+                    </select>
+                    <button>Send inquiry</button>
+                </div>
+            </div>
+            <div class="recommended">
+                <div class="title">Recommended items</div>
+                <div class="products">
+                    <div class="product">
+                        <img src="jewellery.jpg" alt="Jewellery">
+                        <p>$10.30 Jewellery</p>
+                    </div>
+                    <div class="product">
+                        <img src="clay-cups.jpg" alt="Clay Cups">
+                        <p>$10.30 Clay Cups</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-info">
+                <div class="title">More Information</div>
+                <div class="products">
+                    <div class="product">
+                        <img src="artists.jpg" alt="Artists">
+                        <p>Artists</p>
+                    </div>
+                    <div class="product">
+                        <img src="customize.jpg" alt="Customize Your Products">
+                        <p>Customize Your Products</p>
+                    </div>
+                    <div class="product">
+                        <img src="shipping.jpg" alt="Shipping Details">
+                        <p>Shipping Details</p>
+                    </div>
+                    <div class="product">
+                        <img src="safety.jpg" alt="Safety Measures">
+                        <p>Safety Measures</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="title">Subscribe on our newsletter</div>
+                <p>Get daily news on upcoming offers</p>
+                <input type="email" placeholder="Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="column">
+                <div class="logo">
+                    <img src="logo.png" alt="Made in Lismore Logo">
+                    <span>Made in Lismore</span>
+                </div>
+                <p>Learn more here</p>
+                <div class="social-icons">
+                    <img src="facebook-icon.png" alt="Facebook">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                    <img src="instagram-icon.png" alt="Instagram">
+                    <img src="youtube-icon.png" alt="YouTube">
+                </div>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><strong>About</strong></li>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><strong>Partnership</strong></li>
+                    <li>About Us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><strong>Information</strong></li>
+                    <li>Help Center</li>
+                    <li>Money Refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><strong>For users</strong></li>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My Orders</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><strong>Get app</strong></li>
+                    <li>
+                        <img src="appstore-icon.png" alt="App Store">
+                        <img src="playstore-icon.png" alt="Google Play">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
