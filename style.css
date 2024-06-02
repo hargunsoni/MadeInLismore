@@ -301,7 +301,7 @@ body {
 
 
 
-/* styles.css */
+/* second page */
 
 body {
     font-family: Arial, sans-serif;
@@ -481,3 +481,292 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style.css  second try third page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe8e8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8d7da;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+header nav button {
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+header nav .nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav .nav-links a:hover {
+    color: #ff6b6b;
+}
+
+.breadcrumb {
+    margin: 20px 20px 10px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.product-container {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.product-images {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.thumbnail-images {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-details h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.rating span {
+    margin-right: 10px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.pricing div {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #ff4b4b;
+}
+
+.seller-info {
+    margin-top: 20px;
+}
+
+.seller-info div {
+    margin-bottom: 5px;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.tablinks {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f8d7da;
+    border: none;
+    margin-right: 5px;
+}
+
+.tablinks:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+}
+
+.related-products {
+    margin: 20px;
+}
+
+.related-products h2 {
+    margin-top: 0;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-list .product {
+    width: 18%;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.products-list .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.super-discount {
+    background-color: #f8d7da;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f8d7da;
+    padding: 20px;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer .footer-links div {
+    margin-right: 20px;
+}
+
+footer .footer-links a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.social-icons a,
+.get-app a {
+    margin-right: 10px;
+}
+
+.social-icons img,
+.get-app img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+
+
+
