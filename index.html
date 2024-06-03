@@ -4,257 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1368, initial-scale=1.0">
     <title>Made in Lismore</title>
-
- <!-- first page html -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
-    <link rel="stylesheet" href="/Users/hargunsoni/Desktop/MadeInLismore/style.css">
+    <body>
+            <section id="header">
+                <a href="#"><img src="https://madeinlismore.com.au/2020/wp-content/uploads/2024/01/Made-in-Lismore-LOGO.png" class="logo" alt=""></a>
+                <div>
+                  <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+                  </ul>
+                </div>
+              </section>
+              
 
-    <div class="navbar">
-        <div class="logo">
-            <img src="https://madeinlismore.com.au/2020/wp-content/uploads/2024/01/Made-in-Lismore-LOGO.png" alt="Made in Lismore Logo">
-            <span>Made in Lismore</span>
+              <section id="hero">
+                <h4>Latest Trending</h4>
+                <h2>Super value deals</h2>
+                <h1>On all handmade products</h1>
+                <p>Up to 50% off</p>
+                <button>Learn more</button>
+            </section>
+            
+            <section id="feature" class="section-p1">
+              <div class="fe-box">
+                  <img src="pottery.png" alt="">
+                  <h6>Pottery</h6>
+              </div>
+              <div class="fe-box">
+                <img src="card.png" alt="">
+                <h6>Cards</h6>
+            </div>
+            <div class="fe-box">
+              <img src="painting.png" alt="">
+              <h6>Paintings</h6>
+          </div>
+          <div class="fe-box">
+            <img src="weaved.png" alt="">
+            <h6>Weaved baskets</h6>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <select>
-                <option value="all">All category</option>
-                <option value="cards">Cards</option>
-                <option value="pottery">Pottery</option>
-                <option value="paintings">Paintings</option>
-                <!-- Add other categories here -->
-            </select>
-            <button>Search</button>
-        </div>
-        <div class="icons">
-            <img src="profile-icon.png" alt="Profile Icon">
-            <img src="message-icon.png" alt="Message Icon">
-            <img src="orders-icon.png" alt="Orders Icon">
-            <img src="cart-icon.png" alt="Cart Icon">
-        </div>
+        <div class="fe-box">
+          <img src="dreamcatcher.png" alt="">
+          <h6>Dream Catchers</h6>
+      </div>
+      <div class="fe-box">
+        <img src="shipping.png" alt="">
+        <h6>More</h6>
     </div>
+          </section>
 
-    <div style="display: flex;">
-        <div class="sidebar">
-            <ul class="category-list">
-                <li>Handicraft Bestsellers</li>
-                <li>Pottery</li>
-                <li>Home interiors</li>
-                <li>Cards</li>
-                <li>Painting</li>
-                <li>Crafts</li>
-                <li>Order It</li>
-                <li>Make It</li>
-                <li>More category</li>
-            </ul>
-        </div>
-        <div class="main-content">
-            <div class="banner">
-                <img src="https://images.unsplash.com/photo-1527385352018-3c26dd6c3916?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhbmRpbWFkZSUyMGJhZ3N8ZW58MHx8MHx8fDA%3D" alt="Latest trending Handicraft items">
-                <div class="login">
-                    <p>Hi, user let's get started</p>
-                    <button>Join now</button>
-                    <button>Log in</button>
-                </div>
-            </div>
-            <div class="deals-offers">
-                <div class="title">Deals and offers</div>
-                <div class="countdown">
-                    <div>04 Days</div>
-                    <div>13 Hours</div>
-                    <div>34 Min</div>
-                    <div>56 Sec</div>
-                </div>
-                <div class="products">
-                    <div class="product">
-                        <img src="pottery.jpg" alt="Pottery">
-                        <p>Pottery</p>
-                        <p>-25%</p>
-                    </div>
-                    <div class="product">
-                        <img src="cards.jpg" alt="Cards">
-                        <p>Cards</p>
-                        <p>-15%</p>
-                    </div>
-                    <div class="product">
-                        <img src="paintings.jpg" alt="Paintings">
-                        <p>Paintings</p>
-                        <p>-40%</p>
-                    </div>
-                    <div class="product">
-                        <img src="weaved-baskets.jpg" alt="Weaved Baskets">
-                        <p>Weaved Baskets</p>
-                        <p>-25%</p>
-                    </div>
-                    <div class="product">
-                        <img src="canon-cameras.jpg" alt="Canon Cameras">
-                        <p>Canon Cameras</p>
-                        <p>-25%</p>
-                    </div>
-                </div>
-            </div>
-            <div class="home-decor">
-                <div class="title">Home Decor</div>
-                <div class="products">
-                    <div class="product">
-                        <img src="paintings-home-decor.jpg" alt="Paintings">
-                        <p>Paintings</p>
-                    </div>
-                    <div class="product">
-                        <img src="weave-baskets.jpg" alt="Weave Baskets">
-                        <p>Weave Baskets</p>
-                    </div>
-                    <div class="product">
-                        <img src="hanging-art.jpg" alt="Hanging Art">
-                        <p>Hanging Art</p>
-                    </div>
-                    <div class="product">
-                        <img src="clay-cups.jpg" alt="Clay Cups">
-                        <p>Clay Cups</p>
-                    </div>
-                </div>
-            </div>
-            <div class="make-it">
-                <div class="title">Make It</div>
-                <div class="products">
-                    <div class="product">
-                        <img src="workshops.jpg" alt="Workshops">
-                        <p>Workshops</p>
-                    </div>
-                    <div class="product">
-                        <img src="craft-ideas.jpg" alt="Craft Ideas">
-                        <p>Craft Ideas</p>
-                    </div>
-                    <div class="product">
-                        <img src="craft-supplies.jpg" alt="Craft Supplies">
-                        <p>Craft Supplies</p>
-                    </div>
-                    <div class="product">
-                        <img src="more-workshops.jpg" alt="More Workshops">
-                        <p>More Workshops</p>
-                    </div>
-                </div>
-            </div>
-            <div class="quote">
-                <div class="form">
-                    <h3>An easy way to send requests to all Artists</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    <input type="text" placeholder="What item you need?">
-                    <textarea placeholder="Type more details"></textarea>
-                    <select>
-                        <option value="pcs">Pcs</option>
-                        <option value="sets">Sets</option>
-                    </select>
-                    <button>Send inquiry</button>
-                </div>
-            </div>
-            <div class="recommended">
-                <div class="title">Recommended items</div>
-                <div class="products">
-                    <div class="product">
-                        <img src="jewellery.jpg" alt="Jewellery">
-                        <p>$10.30 Jewellery</p>
-                    </div>
-                    <div class="product">
-                        <img src="clay-cups.jpg" alt="Clay Cups">
-                        <p>$10.30 Clay Cups</p>
-                    </div>
-                </div>
-            </div>
-            <div class="more-info">
-                <div class="title">More Information</div>
-                <div class="products">
-                    <div class="product">
-                        <img src="artists.jpg" alt="Artists">
-                        <p>Artists</p>
-                    </div>
-                    <div class="product">
-                        <img src="customize.jpg" alt="Customize Your Products">
-                        <p>Customize Your Products</p>
-                    </div>
-                    <div class="product">
-                        <img src="shipping.jpg" alt="Shipping Details">
-                        <p>Shipping Details</p>
-                    </div>
-                    <div class="product">
-                        <img src="safety.jpg" alt="Safety Measures">
-                        <p>Safety Measures</p>
-                    </div>
-                </div>
-            </div>
-            <div class="newsletter">
-                <div class="title">Subscribe on our newsletter</div>
-                <p>Get daily news on upcoming offers</p>
-                <input type="email" placeholder="Email">
-                <button>Subscribe</button>
-            </div>
-        </div>
-    </div>
 
-    <footer>
-        <div class="container">
-            <div class="column">
-                <div class="logo">
-                    <img src="logo.png" alt="Made in Lismore Logo">
-                    <span>Made in Lismore</span>
+          <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Home Decor Collection</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="claycups.png" alt="">
+                    <div class="des">
+                        <span>Vanessa</span>
+                        <h5>Clay Cups</h5>
+                        <div class="star">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <h4>$78</h4>                       
+                    </div>
+                    <a href="#"><i class='bx bx-cart cart'></i></a></li>
                 </div>
-                <p>Learn more here</p>
-                <div class="social-icons">
-                    <img src="facebook-icon.png" alt="Facebook">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                    <img src="instagram-icon.png" alt="Instagram">
-                    <img src="youtube-icon.png" alt="YouTube">
-                </div>
+                <div class="pro-container">
+                  <div class="pro">
+                      <img src="claycups.png" alt="">
+                      <div class="des">
+                          <span>Vanessa</span>
+                          <h5>Clay Cups</h5>
+                          <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>                       
+                      </div>
+                      <a href="#"><i class='bx bx-cart cart'></i></a></li>
+                  </div>
+                  <div class="pro-container">
+                    <div class="pro">
+                        <img src="claycups.png" alt="">
+                        <div class="des">
+                            <span>Vanessa</span>
+                            <h5>Clay Cups</h5>
+                            <div class="star">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <h4>$78</h4>                       
+                        </div>
+                        <a href="#"><i class='bx bx-cart cart'></i></a></li>
+                    </div>
+                    <div class="pro-container">
+                      <div class="pro">
+                          <img src="claycups.png" alt="">
+                          <div class="des">
+                              <span>Vanessa</span>
+                              <h5>Clay Cups</h5>
+                              <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$78</h4>                       
+                          </div>
+                          <a href="#"><i class='bx bx-cart cart'></i></a></li>
+                      </div>
+                      <div class="pro-container">
+                        <div class="pro">
+                            <img src="claycups.png" alt="">
+                            <div class="des">
+                                <span>Vanessa</span>
+                                <h5>Clay Cups</h5>
+                                <div class="star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                              </div>
+                              <h4>$78</h4>                       
+                            </div>
+                            <a href="#"><i class='bx bx-cart cart'></i></a></li>
+                        </div>
             </div>
-            <div class="column">
-                <ul>
-                    <li><strong>About</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Partnership</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Information</strong></li>
-                    <li>Help Center</li>
-                    <li>Money Refund</li>
-                    <li>Shipping</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>For users</strong></li>
-                    <li>Login</li>
-                    <li>Register</li>
-                    <li>Settings</li>
-                    <li>My Orders</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Get app</strong></li>
-                    <li>
-                        <img src="appstore-icon.png" alt="App Store">
-                        <img src="playstore-icon.png" alt="Google Play">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </section>
+        
+          
+        
 
-</body>
+
+
+
+
+            <script src="script.js"></script>
+      </body>
 </html>
 
 
@@ -274,531 +178,17 @@
 
 
 
+ 
 
 
 
 
 
 
-<!-- third page html -->
 
 
-<!-- third page second try  -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Made in Lismore Logo">
-            <span>Made in Lismore</span>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <select>
-                <option value="all">All category</option>
-                <option value="cards">Cards</option>
-                <option value="pottery">Pottery</option>
-                <option value="paintings">Paintings</option>
-                <!-- Add other categories here -->
-            </select>
-            <button>Search</button>
-        </div>
-        <div class="icons">
-            <img src="profile-icon.png" alt="Profile Icon">
-            <img src="message-icon.png" alt="Message Icon">
-            <img src="orders-icon.png" alt="Orders Icon">
-            <img src="cart-icon.png" alt="Cart Icon">
-        </div>
-    </div>
-    <main>
-        <div class="breadcrumb">
-            <a href="#">Home</a> > <a href="#">Clothings</a> > <a href="#">Men's wear</a> > <a href="#">Summer clothing</a>
-        </div>
-        <div class="product-section">
-            <div class="product-container">
-                <div class="product-images">
-                    <img src="main-image.png" alt="Thank You Mother">
-                    <div class="thumbnail-images">
-                        <img src="thumb1.png" alt="">
-                        <img src="thumb2.png" alt="">
-                        <img src="thumb3.png" alt="">
-                        <img src="thumb4.png" alt="">
-                    </div>
-                </div>
-                <div class="product-details">
-                    <h1>Thank You Mother</h1>
-                    <div class="rating">
-                        <span>⭐ 9.3</span>
-                        <span>32 reviews</span>
-                        <span>154 sold</span>
-                    </div>
-                    <div class="pricing">
-                        <div>$10.00 (50-100 pcs)</div>
-                        <div>$20.00 (100-700 pcs)</div>
-                        <div>$30.00 (700+ pcs)</div>
-                    </div>
-                    <div class="actions">
-                        <button id="buy-now">Buy Now</button>
-                        <button id="save-for-later">Save for later</button>
-                    </div>
-                    <div class="seller-info">
-                        <div>Artist: Vanessa</div>
-                        <div>Verified Seller</div>
-                        <div>Worldwide shipping</div>
-                        <button>Send inquiry</button>
-                        <button>Seller's profile</button>
-                    </div>
-                </div>
-            </div>
-            <div class="tabs">
-                <button class="tablinks" onclick="openTab(event, 'Description')">Description</button>
-                <button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
-                <button class="tablinks" onclick="openTab(event, 'Shipping')">Shipping</button>
-                <button class="tablinks" onclick="openTab(event, 'About Seller')">About Seller</button>
-            </div>
-            <div id="Description" class="tabcontent">
-                <h3>Description</h3>
-                <p>Standard 6" x 4" card</p>
-                <p>Blank on the inside - you can add your own message</p>
-                <p>Includes envelope</p>
-                <p>Wholesale enquiries welcome.</p>
-                <p>Style: Classic style</p>
-                <p>Size: 6" x 4"</p>
-            </div>
-            <div id="Reviews" class="tabcontent">
-                <h3>Reviews</h3>
-            </div>
-            <div id="Shipping" class="tabcontent">
-                <h3>Shipping</h3>
-            </div>
-            <div id="About Seller" class="tabcontent">
-                <h3>About Seller</h3>
-            </div>
-            <div class="related-products">
-                <h2>Related products</h2>
-                <div class="products-list">
-                    <div class="product">
-                        <img src="related1.png" alt="Xiaomi Redmi 8">
-                        <p>Xiaomi Redmi 8</p>
-                        <p>$32.00 - $40.00</p>
-                    </div>
-                    <div class="product">
-                        <img src="related2.png" alt="Xiaomi Redmi 8">
-                        <p>Xiaomi Redmi 8</p>
-                        <p>$32.00 - $40.00</p>
-                    </div>
-                    <div class="product">
-                        <img src="related3.png" alt="Xiaomi Redmi 8">
-                        <p>Xiaomi Redmi 8</p>
-                        <p>$32.00 - $40.00</p>
-                    </div>
-                    <div class="product">
-                        <img src="related4.png" alt="Xiaomi Redmi 8">
-                        <p>Xiaomi Redmi 8</p>
-                        <p>$32.00 - $40.00</p>
-                    </div>
-                    <div class="product">
-                        <img src="related5.png" alt="Xiaomi Redmi 8">
-                        <p>Xiaomi Redmi 8</p>
-                        <p>$32.00 - $40.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="super-discount">
-                <h2>Super discount on more than 100 AUD</h2>
-                <p>Have you ever finally just write dummy info</p>
-                <button>Shop now</button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="column">
-                <div class="logo">
-                    <img src="logo.png" alt="Made in Lismore Logo">
-                    <span>Made in Lismore</span>
-                </div>
-                <p>Learn more here</p>
-                <div class="social-icons">
-                    <img src="facebook-icon.png" alt="Facebook">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                    <img src="instagram-icon.png" alt="Instagram">
-                    <img src="youtube-icon.png" alt="YouTube">
-                </div>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>About</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Partnership</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Information</strong></li>
-                    <li>Help Center</li>
-                    <li>Money Refund</li>
-                    <li>Shipping</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>For users</strong></li>
-                    <li>Login</li>
-                    <li>Register</li>
-                    <li>Settings</li>
-                    <li>My Orders</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Get app</strong></li>
-                    <li>
-                        <img src="appstore-icon.png" alt="App Store">
-                        <img src="playstore-icon.png" alt="Google Play">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
-</html>
+
 
 
 <!-- fourth page html  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Made in Lismore Logo">
-            <span>Made in Lismore</span>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <select>
-                <option value="all">All category</option>
-                <option value="cards">Cards</option>
-                <option value="pottery">Pottery</option>
-                <option value="paintings">Paintings</option>
-                <!-- Add other categories here -->
-            </select>
-            <button>Search</button>
-        </div>
-        <div class="icons">
-            <img src="profile-icon.png" alt="Profile Icon">
-            <img src="message-icon.png" alt="Message Icon">
-            <img src="orders-icon.png" alt="Orders Icon">
-            <img src="cart-icon.png" alt="Cart Icon" id="my-cart">
-        </div>
-    </div>
-
-    <main>
-        <div class="cart-page">
-            <div class="cart-and-summary">
-                <div class="cart-container">
-                    <h1>My cart (3)</h1>
-                    <div class="cart-item">
-                        <img src="main-image.png" alt="Thank You Mother">
-                        <div class="cart-item-details">
-                            <h2>Thank You Mother</h2>
-                            <p>Size: medium, Color: White, Material: Paper</p>
-                            <span>$10.99</span>
-                            <label for="quantity1">Qty:</label>
-                            <select id="quantity1">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <button class="remove">Remove</button>
-                            <button class="save-for-later">Save for later</button>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <img src="thumb1.png" alt="Thank You Mother">
-                        <div class="cart-item-details">
-                            <h2>Thank You Mother</h2>
-                            <p>Size: medium, Color: blue, Material: Plastic</p>
-                            <span>$10.00</span>
-                            <label for="quantity2">Qty:</label>
-                            <select id="quantity2">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <button class="remove">Remove</button>
-                            <button class="save-for-later">Save for later</button>
-                        </div>
-                    </div>
-                    <div class="cart-item">
-                        <img src="thumb2.png" alt="Happy Birthday Mother">
-                        <div class="cart-item-details">
-                            <h2>Happy Birthday Mother</h2>
-                            <p>Size: medium, Color: blue, Material: Paper</p>
-                            <span>$10.50</span>
-                            <label for="quantity3">Qty:</label>
-                            <select id="quantity3">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <button class="remove">Remove</button>
-                            <button class="save-for-later">Save for later</button>
-                        </div>
-                    </div>
-                    <div class="cart-actions">
-                        <button>Back to shop</button>
-                        <button class="remove-all">Remove all</button>
-                    </div>
-                </div>
-                <div class="checkout-summary">
-                    <h3>Have a coupon?</h3>
-                    <input type="text" placeholder="Add coupon">
-                    <button>Apply</button>
-                    <div class="summary-details">
-                        <p>Subtotal: <span>$31.50</span></p>
-                        <p>Discount: <span>$-10.00</span></p>
-                        <p>Tax: <span>$10.00</span></p>
-                        <p>Total: <span>$31.50</span></p>
-                        <button id="checkout-button">Checkout</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="saved-for-later">
-                <h2>Saved for later</h2>
-                <div class="products-list">
-                    <div class="product">
-                        <img src="related1.png" alt="Starry Night Mother">
-                        <p>$10.50</p>
-                        <p>Starry Night Mother</p>
-                        <button>Move to cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="related2.png" alt="Starry Night Mother">
-                        <p>$10.50</p>
-                        <p>Starry Night Mother</p>
-                        <button>Move to cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="related3.png" alt="Starry Night Mother">
-                        <p>$10.50</p>
-                        <p>Starry Night Mother</p>
-                        <button>Move to cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="related4.png" alt="Starry Night Mother">
-                        <p>$10.50</p>
-                        <p>Starry Night Mother</p>
-                        <button>Move to cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="super-discount">
-                <h2>Super discount on more than 100 AUD</h2>
-                <p>Have you ever finally just write dummy info</p>
-                <button>Shop now</button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <div class="column">
-                <div class="logo">
-                    <img src="logo.png" alt="Made in Lismore Logo">
-                    <span>Made in Lismore</span>
-                </div>
-                <p>Learn more here</p>
-                <div class="social-icons">
-                    <img src="facebook-icon.png" alt="Facebook">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                    <img src="instagram-icon.png" alt="Instagram">
-                    <img src="youtube-icon.png" alt="YouTube">
-                </div>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>About</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Partnership</strong></li>
-                    <li>About Us</li>
-                    <li>Find store</li>
-                    <li>Categories</li>
-                    <li>Blogs</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Information</strong></li>
-                    <li>Help Center</li>
-                    <li>Money Refund</li>
-                    <li>Shipping</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>For users</strong></li>
-                    <li>Login</li>
-                    <li>Register</li>
-                    <li>Settings</li>
-                    <li>My Orders</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><strong>Get app</strong></li>
-                    <li>
-                        <img src="appstore-icon.png" alt="App Store">
-                        <img src="playstore-icon.png" alt="Google Play">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!-- fourth page html -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Shop in Essence</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Cart</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="cart">
-            <h2>My cart (3)</h2>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                </tr>
-                <tr>
-                    <td>Thank You Noter<br>Size: Medium, Color: White, Material: Paper</td>
-                    <td>$7.99</td>
-                    <td>1</td>
-                    <td>$7.99</td>
-                </tr>
-                <tr>
-                    <td>Thank You Noter<br>Size: Medium, Color: Blue, Material: Plastic</td>
-                    <td>$8.10</td>
-                    <td>2</td>
-                    <td>$16.20</td>
-                </tr>
-                <tr>
-                    <td>Happy Birthday Noter<br>Size: Medium, Color: Red, Material: Paper</td>
-                    <td>$9.20</td>
-                    <td>1</td>
-                    <td>$9.20</td>
-                </tr>
-            </table>
-            <div class="cart-summary">
-                <p>Subtotal: <span>$33.39</span></p>
-                <p>Discount: <span>$1.89</span></p>
-                <p>Total: <span>$31.50</span></p>
-                <button>Checkout</button>
-            </div>
-        </section>
-
-        <section class="saved-for-later">
-            <h2>Saved for later</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="img/sari.jpg" alt="Sari">
-                    <p>Sari Night Wear</p>
-                    <p>$15.00</p>
-                    <button>Move to cart</button>
-                </div>
-                <div class="product">
-                    <img src="img/sari.jpg" alt="Sari">
-                    <p>Sari Night Wear</p>
-                    <p>$10.50</p>
-                    <button>Move to cart</button>
-                </div>
-                <div class="product">
-                    <img src="img/sari.jpg" alt="Sari">
-                    <p>Sari Night Wear</p>
-                    <p>$10.30</p>
-                    <button>Move to cart</button>
-                </div>
-                <div class="product">
-                    <img src="img/sari.jpg" alt="Sari">
-                    <p>Sari Night Wear</p>
-                    <p>$18.00</p>
-                    <button>Move to cart</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2023 E-commerce</p>
-    </footer>
-</body>
-</html>
